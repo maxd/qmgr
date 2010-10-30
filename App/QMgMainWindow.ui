@@ -67,7 +67,327 @@
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuCommands">
+    <property name="title">
+     <string>&amp;Commands</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionMove"/>
+    <addaction name="actionDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionCompress"/>
+    <addaction name="actionDecompress"/>
+    <addaction name="separator"/>
+    <addaction name="actionView"/>
+    <addaction name="actionEdit"/>
+    <addaction name="separator"/>
+    <addaction name="actionChangeAttributes"/>
+    <addaction name="actionProperties"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionReload"/>
+    <addaction name="separator"/>
+    <addaction name="actionBriefView"/>
+    <addaction name="actionFullView"/>
+    <addaction name="separator"/>
+    <addaction name="actionSortByName"/>
+    <addaction name="actionSortByExtension"/>
+    <addaction name="actionSortByTime"/>
+    <addaction name="actionSortBySize"/>
+    <addaction name="actionUnsorted"/>
+    <addaction name="separator"/>
+    <addaction name="actionReverseOrder"/>
+    <addaction name="separator"/>
+    <addaction name="actionSwapLeftRight"/>
+    <addaction name="actionLeftEqualRight"/>
+   </widget>
+   <widget class="QMenu" name="menuMark">
+    <property name="title">
+     <string>&amp;Mark</string>
+    </property>
+    <addaction name="actionSelectAll"/>
+    <addaction name="actionUnselectAll"/>
+    <addaction name="actionInvertSelection"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveSelection"/>
+    <addaction name="actionRestoreSelection"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelectionToClipboard"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>&amp;Tools</string>
+    </property>
+    <addaction name="actionSearch"/>
+    <addaction name="separator"/>
+    <addaction name="actionCompareByContent"/>
+    <addaction name="actionCompareDirectories"/>
+    <addaction name="separator"/>
+    <addaction name="actionSplitFile"/>
+    <addaction name="actionCombineFiles"/>
+    <addaction name="separator"/>
+    <addaction name="actionEncodeFile"/>
+    <addaction name="actionDecodeFile"/>
+    <addaction name="separator"/>
+    <addaction name="actionCreateCRC"/>
+    <addaction name="actionVerifyCRC"/>
+    <addaction name="separator"/>
+    <addaction name="actionMultiRenameTool"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="actionMenu"/>
+    <addaction name="actionScripts"/>
+    <addaction name="separator"/>
+    <addaction name="actionPlugins"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionHotkeys"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuCommands"/>
+   <addaction name="menuView"/>
+   <addaction name="menuMark"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuHelp"/>
   </widget>
+  <action name="actionCopy">
+   <property name="text">
+    <string>&amp;Copy...</string>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="text">
+    <string>&amp;Move</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>&amp;Delete...</string>
+   </property>
+  </action>
+  <action name="actionCompress">
+   <property name="text">
+    <string>Compress...</string>
+   </property>
+  </action>
+  <action name="actionDecompress">
+   <property name="text">
+    <string>Decompress...</string>
+   </property>
+  </action>
+  <action name="actionView">
+   <property name="text">
+    <string>View...</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Edit...</string>
+   </property>
+  </action>
+  <action name="actionChangeAttributes">
+   <property name="text">
+    <string>Change Attributes...</string>
+   </property>
+  </action>
+  <action name="actionProperties">
+   <property name="text">
+    <string>Properties...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="text">
+    <string>&amp;Reload</string>
+   </property>
+  </action>
+  <action name="actionBriefView">
+   <property name="text">
+    <string>&amp;Brief</string>
+   </property>
+  </action>
+  <action name="actionFullView">
+   <property name="text">
+    <string>&amp;Full</string>
+   </property>
+  </action>
+  <action name="actionSortByName">
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </action>
+  <action name="actionSortByExtension">
+   <property name="text">
+    <string>Extension</string>
+   </property>
+  </action>
+  <action name="actionSortByTime">
+   <property name="text">
+    <string>Time</string>
+   </property>
+  </action>
+  <action name="actionSortBySize">
+   <property name="text">
+    <string>Size</string>
+   </property>
+  </action>
+  <action name="actionUnsorted">
+   <property name="text">
+    <string>Unsorted</string>
+   </property>
+  </action>
+  <action name="actionReverseOrder">
+   <property name="text">
+    <string>Reverse Order</string>
+   </property>
+  </action>
+  <action name="actionSwapLeftRight">
+   <property name="text">
+    <string>Left &lt;=&gt; Right</string>
+   </property>
+   <property name="toolTip">
+    <string>Left &lt;=&gt; Right</string>
+   </property>
+  </action>
+  <action name="actionLeftEqualRight">
+   <property name="text">
+    <string>Left = Right</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionUnselectAll">
+   <property name="text">
+    <string>Unselect All</string>
+   </property>
+  </action>
+  <action name="actionInvertSelection">
+   <property name="text">
+    <string>Invert Selection</string>
+   </property>
+  </action>
+  <action name="actionSaveSelection">
+   <property name="text">
+    <string>Save Selection...</string>
+   </property>
+  </action>
+  <action name="actionRestoreSelection">
+   <property name="text">
+    <string>Restore Selection...</string>
+   </property>
+  </action>
+  <action name="actionSelectionToClipboard">
+   <property name="text">
+    <string>Selection To Clipboard...</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="text">
+    <string>Search...</string>
+   </property>
+  </action>
+  <action name="actionCompareByContent">
+   <property name="text">
+    <string>Compare By Content...</string>
+   </property>
+  </action>
+  <action name="actionCompareDirectories">
+   <property name="text">
+    <string>Compare Directories...</string>
+   </property>
+  </action>
+  <action name="actionSplitFile">
+   <property name="text">
+    <string>Split File...</string>
+   </property>
+  </action>
+  <action name="actionCombineFiles">
+   <property name="text">
+    <string>Combine Files...</string>
+   </property>
+  </action>
+  <action name="actionEncodeFile">
+   <property name="text">
+    <string>Encode File...</string>
+   </property>
+  </action>
+  <action name="actionDecodeFile">
+   <property name="text">
+    <string>Decode File...</string>
+   </property>
+  </action>
+  <action name="actionCreateCRC">
+   <property name="text">
+    <string>Create CRC...</string>
+   </property>
+  </action>
+  <action name="actionVerifyCRC">
+   <property name="text">
+    <string>Verify CRC...</string>
+   </property>
+  </action>
+  <action name="actionMultiRenameTool">
+   <property name="text">
+    <string>Multi-Rename Tool...</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings...</string>
+   </property>
+  </action>
+  <action name="actionMenu">
+   <property name="text">
+    <string>Menu...</string>
+   </property>
+  </action>
+  <action name="actionScripts">
+   <property name="text">
+    <string>Scripts...</string>
+   </property>
+  </action>
+  <action name="actionPlugins">
+   <property name="text">
+    <string>Plugins...</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help...</string>
+   </property>
+  </action>
+  <action name="actionHotkeys">
+   <property name="text">
+    <string>Hotkeys...</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About...</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
