@@ -1,0 +1,2 @@
+RESOURCES += \
+    Resources/QMgResources.qrc
