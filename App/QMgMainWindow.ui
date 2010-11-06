@@ -32,17 +32,31 @@
          <enum>Qt::Horizontal</enum>
         </property>
         <widget class="QWidget" name="verticalLayoutWidget">
-         <layout class="QVBoxLayout" name="leftFilesPanelPlaceholder">
+         <layout class="QVBoxLayout" name="leftPanel">
           <property name="spacing">
            <number>0</number>
           </property>
+          <item>
+           <widget class="QTabWidget" name="leftTabWidget">
+            <property name="currentIndex">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
         <widget class="QWidget" name="verticalLayoutWidget_2">
-         <layout class="QVBoxLayout" name="rightFilesPanelPlaceholder">
+         <layout class="QVBoxLayout" name="rightPanel">
           <property name="spacing">
            <number>0</number>
           </property>
+          <item>
+           <widget class="QTabWidget" name="rightTabWidget">
+            <property name="currentIndex">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </widget>

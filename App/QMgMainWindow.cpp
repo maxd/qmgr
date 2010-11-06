@@ -28,8 +28,7 @@ void QMgMainWindow::setupFilesPanels()
     //controllerL->open("/home/closer");
     controllerL->open("/");
 
-    ui->leftFilesPanelPlaceholder->addWidget(fileListL);
-
+    ui->leftTabWidget->addTab(fileListL, "L");
 
 
     QMgFileList *fileListR = new QMgFileList(this);
@@ -41,5 +40,5 @@ void QMgMainWindow::setupFilesPanels()
     //controllerR->open("/home/closer");
     controllerR->open("/");
 
-    ui->rightFilesPanelPlaceholder->addWidget(fileListR);
+    ui->rightTabWidget->addTab(fileListR, "R");
 }
