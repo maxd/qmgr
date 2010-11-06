@@ -186,7 +186,7 @@
   </action>
   <action name="actionMove">
    <property name="text">
-    <string>&amp;Move</string>
+    <string>&amp;Move...</string>
    </property>
   </action>
   <action name="actionDelete">
