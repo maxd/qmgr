@@ -2,4 +2,15 @@
     <qresource prefix="/images">
         <file>reload-white.gif</file>
     </qresource>
+    <qresource prefix="/">
+        <file>menu/help.png</file>
+        <file>menu/reload.png</file>
+        <file>menu/about.png</file>
+        <file>menu/settings.png</file>
+        <file>menu/hotkeys.png</file>
+        <file>menu/scripts.png</file>
+        <file>menu/plugins.png</file>
+        <file>menu/full.png</file>
+        <file>menu/brief.png</file>
+    </qresource>
 </RCC>

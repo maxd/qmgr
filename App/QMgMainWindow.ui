@@ -230,18 +230,39 @@
    </property>
   </action>
   <action name="actionReload">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/reload.png</normaloff>:/menu/reload.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Reload</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionBriefView">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/brief.png</normaloff>:/menu/brief.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Brief</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionFullView">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/full.png</normaloff>:/menu/full.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Full</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
    </property>
   </action>
   <action name="actionSortByName">
@@ -368,8 +389,15 @@
    </property>
   </action>
   <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/settings.png</normaloff>:/menu/settings.png</iconset>
+   </property>
    <property name="text">
     <string>Settings...</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
    </property>
   </action>
   <action name="actionMenu">
@@ -378,32 +406,69 @@
    </property>
   </action>
   <action name="actionScripts">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/scripts.png</normaloff>:/menu/scripts.png</iconset>
+   </property>
    <property name="text">
     <string>Scripts...</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionPlugins">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/plugins.png</normaloff>:/menu/plugins.png</iconset>
+   </property>
    <property name="text">
     <string>Plugins...</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/help.png</normaloff>:/menu/help.png</iconset>
+   </property>
    <property name="text">
     <string>Help...</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionHotkeys">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/hotkeys.png</normaloff>:/menu/hotkeys.png</iconset>
+   </property>
    <property name="text">
     <string>Hotkeys...</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
   </action>
   <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../Resources/QMgResources.qrc">
+     <normaloff>:/menu/about.png</normaloff>:/menu/about.png</iconset>
+   </property>
    <property name="text">
     <string>About...</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="../Resources/QMgResources.qrc"/>
+ </resources>
  <connections/>
 </ui>
